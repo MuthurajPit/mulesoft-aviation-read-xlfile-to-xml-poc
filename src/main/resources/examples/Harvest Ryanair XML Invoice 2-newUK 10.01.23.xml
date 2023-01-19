@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InvoiceTransmission xmlns:ns0="http://www.IATA.com/IATAFuelCodeDirectory" xmlns:ns1="http://www.IATA.com/IATABaseDataTypeDirectory">
+   <InvoiceTransmissionHeader>
+       <InvoiceTransmissionId>202301050330331965550139</InvoiceTransmissionId>
+       <InvoiceCreationDate>2023-01-03T00:10:20</InvoiceCreationDate>
+       <Version>IATA:FuelInvoiceV3.1.0</Version>
+       <IssuingOrganizationID>HARVESTINFO</IssuingOrganizationID>
+   </InvoiceTransmissionHeader>
+   <Invoice>
+       <InvoiceHeader>
+           <CustomerEntityID>HAC350086</CustomerEntityID>
+           <IssuingEntityID>16406</IssuingEntityID>
+           <IssuingEntityName>Harvest Energy Aviation Ltd</IssuingEntityName>
+           <IssuingEntityAffiliateName>HARVESTINFO</IssuingEntityAffiliateName>
+           <InvoiceNumber>260003501</InvoiceNumber>
+           <InvoiceIssueDate>2023-01-03</InvoiceIssueDate>
+           <InvoiceType InvoiceTransactionType="FI">INV</InvoiceType>
+           <InvoiceDeliveryLocation>STN</InvoiceDeliveryLocation>
+           <InvoiceDeliveryCountryCode>GB</InvoiceDeliveryCountryCode>
+           <InvoicePaymentTermsType>14</InvoicePaymentTermsType>
+           <InvoicePaymentTermsDateBasis>ID</InvoicePaymentTermsDateBasis>
+           <InvoicePaymentTermsDiscountPercent>0.000000</InvoicePaymentTermsDiscountPercent>
+           <InvoicePaymentTermsNetDueDate>2023-01-17T00:00:00</InvoicePaymentTermsNetDueDate>
+           <InvoicePaymentTermsNetDueDays>0000000014</InvoicePaymentTermsNetDueDays>
+           <InvoicePaymentTermsDescription>NET 14 CALENDAR DAYS</InvoicePaymentTermsDescription>
+           <InvoiceReferenceValue InvoiceReferenceType="CTN">10324820</InvoiceReferenceValue>
+           <TaxInvoiceNumber>260003501</TaxInvoiceNumber>
+           <InvoiceCurrencyCode>USD</InvoiceCurrencyCode>
+           <InvoiceTotalAmount>79133.17</InvoiceTotalAmount>
+           <InvoiceDiscountAmount>0.00</InvoiceDiscountAmount>
+       </InvoiceHeader>
+       <SubInvoiceHeader>
+           <SubInvoiceNumber>260003501</SubInvoiceNumber>
+           <InvoiceLine>
+               <ItemNumber>000001</ItemNumber>
+               <ItemQuantity>
+                   <ItemQuantityType>DL</ItemQuantityType>
+                   <ItemQuantityFlag>GR</ItemQuantityFlag>
+                   <ItemQuantityQty>00000097613.000000</ItemQuantityQty>
+                   <ItemQuantityUOM>LT</ItemQuantityUOM>
+               </ItemQuantity>
+               <ItemDeliveryReferenceValue ItemDeliveryReferenceType="FNO">ABC123</ItemDeliveryReferenceValue>
+               <ItemDeliveryReferenceValue ItemDeliveryReferenceType="DTN">0201</ItemDeliveryReferenceValue>
+               <ItemDeliveryReferenceValue ItemDeliveryReferenceType="ARN">ABC123</ItemDeliveryReferenceValue>
+               <ItemDeliveryLocation>STN</ItemDeliveryLocation>
+               <ItemTransportation ItemTransportationType="IP">
+                   <ItemTransportationAmount>0.00</ItemTransportationAmount>
+               </ItemTransportation>
+               <ItemReferenceLocalDate ItemReferenceDateTypes="DTA">2023-01-03T00:00:00</ItemReferenceLocalDate>
+               <ItemInvoiceAmount>12077.19</ItemInvoiceAmount>
+			   <InvoiceDetails>
+			   <HEALNo>HEAL/6786</HEALNo>
+				<companyName>Ryanair DAC</companyName>
+				<DateofSale>44929</DateofSale>
+				<TicketNumber>218</TicketNumber>
+				<VolumeLT>10676</VolumeLT>
+				<UOM>LT</UOM>
+				<VolumeGallons>2820.30216013589</VolumeGallons>
+				<UOM>LT</UOM>
+				<AircraftRegNo>EIEVN  </AircraftRegNo>
+				<FlightNumber>FR2530</FlightNumber>
+				<Destination>TFS</Destination>
+				<DomesticInternational>INT</DomesticInternational>
+				<Total>8444.197681205173</Total>
+				<HydrantFee>94.4826</HydrantFee>
+				<UOM>LT</UOM>
+				<ThroughputFee>43.985119999999995</ThroughputFee>
+				<UOM>LT</UOM>
+				<StorageFee>0</StorageFee>
+				<UOM>LT</UOM>
+				<AttendanceFee>35</AttendanceFee>
+				<TotalFeesApplicableGBP>173.46771999999999</TotalFeesApplicableGBP>
+				<TotalFeesApplicableUSD>211.31837650399999</TotalFeesApplicableUSD>
+			   </InvoiceDetails>			    
+               <SubItem>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="PRDT">Jet A1</SubItemProductID>
+                       <SubItemDescription>Jet A1</SubItemDescription>
+                       <SubItemPricingUnitRateType>UR</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000288.510000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>USG</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000000331.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>77207.14</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>USG</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000000331.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000003222.900000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>IN</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000347.690000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>11556.96</SubItemInvoiceAmount>
+                   </SubItemProduct>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="FEE">Hydrant Fee</SubItemProductID>
+                       <SubItemDescription>Hydrant Fee</SubItemDescription>
+                       <SubItemPricingUnitRateType>UR</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000000.885000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>LT</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000001000.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>107.97</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>LT</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000001000.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000000001.000000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>DL</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000107.970000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>107.97</SubItemInvoiceAmount>
+                   </SubItemProduct>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="FEE">Throughput Fee</SubItemProductID>
+                       <SubItemDescription>Throughput Fee</SubItemDescription>
+                       <SubItemPricingUnitRateType>UR</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000000.412000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>LT</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000001000.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>50.26</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>LT</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000001000.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000000001.000000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>DL</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000050.260000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>50.26</SubItemInvoiceAmount>
+                   </SubItemProduct>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="FEE">Attendance Fee</SubItemProductID>
+                       <SubItemDescription>Attendance Fee</SubItemDescription>
+                       <SubItemPricingUnitRateType>FF</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000035.000000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>EA</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000000001.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>280.00</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>EA</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000000001.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000000001.000000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>IN</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000280.000000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>280.00</SubItemInvoiceAmount>
+                   </SubItemProduct>
+               </SubItem>
+           </InvoiceLine>
+		   <InvoiceLine>
+               <ItemNumber>000001</ItemNumber>
+               <ItemQuantity>
+                   <ItemQuantityType>DL</ItemQuantityType>
+                   <ItemQuantityFlag>GR</ItemQuantityFlag>
+                   <ItemQuantityQty>00000097613.000000</ItemQuantityQty>
+                   <ItemQuantityUOM>LT</ItemQuantityUOM>
+               </ItemQuantity>
+               <ItemDeliveryReferenceValue ItemDeliveryReferenceType="FNO">ABC123</ItemDeliveryReferenceValue>
+               <ItemDeliveryReferenceValue ItemDeliveryReferenceType="DTN">0201</ItemDeliveryReferenceValue>
+               <ItemDeliveryReferenceValue ItemDeliveryReferenceType="ARN">ABC123</ItemDeliveryReferenceValue>
+               <ItemDeliveryLocation>STN</ItemDeliveryLocation>
+               <ItemTransportation ItemTransportationType="IP">
+                   <ItemTransportationAmount>0.00</ItemTransportationAmount>
+               </ItemTransportation>
+               <ItemReferenceLocalDate ItemReferenceDateTypes="DTA">2023-01-03T00:00:00</ItemReferenceLocalDate>
+               <ItemInvoiceAmount>12077.19</ItemInvoiceAmount>
+			   <InvoiceDetails>
+			   <HEALNo>HEAL/6786</HEALNo>
+				<companyName>Ryanair DAC</companyName>
+				<DateofSale>44929</DateofSale>
+				<TicketNumber>218</TicketNumber>
+				<VolumeLT>10676</VolumeLT>
+				<UOM>LT</UOM>
+				<VolumeGallons>2820.30216013589</VolumeGallons>
+				<UOM>LT</UOM>
+				<AircraftRegNo>EIEVN  </AircraftRegNo>
+				<FlightNumber>FR2530</FlightNumber>
+				<Destination>TFS</Destination>
+				<DomesticInternational>INT</DomesticInternational>
+				<Total>8444.197681205173</Total>
+				<HydrantFee>94.4826</HydrantFee>
+				<UOM>LT</UOM>
+				<ThroughputFee>43.985119999999995</ThroughputFee>
+				<UOM>LT</UOM>
+				<StorageFee>0</StorageFee>
+				<UOM>LT</UOM>
+				<AttendanceFee>35</AttendanceFee>
+				<TotalFeesApplicableGBP>173.46771999999999</TotalFeesApplicableGBP>
+				<TotalFeesApplicableUSD>211.31837650399999</TotalFeesApplicableUSD>
+			   </InvoiceDetails>			    
+               <SubItem>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="PRDT">Jet A1</SubItemProductID>
+                       <SubItemDescription>Jet A1</SubItemDescription>
+                       <SubItemPricingUnitRateType>UR</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000288.510000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>USG</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000000331.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>77207.14</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>USG</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000000331.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000003222.900000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>IN</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000347.690000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>11556.96</SubItemInvoiceAmount>
+                   </SubItemProduct>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="FEE">Hydrant Fee</SubItemProductID>
+                       <SubItemDescription>Hydrant Fee</SubItemDescription>
+                       <SubItemPricingUnitRateType>UR</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000000.885000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>LT</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000001000.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>107.97</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>LT</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000001000.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000000001.000000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>DL</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000107.970000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>107.97</SubItemInvoiceAmount>
+                   </SubItemProduct>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="FEE">Throughput Fee</SubItemProductID>
+                       <SubItemDescription>Throughput Fee</SubItemDescription>
+                       <SubItemPricingUnitRateType>UR</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000000.412000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>LT</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000001000.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>50.26</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>LT</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000001000.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000000001.000000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>DL</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000050.260000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>50.26</SubItemInvoiceAmount>
+                   </SubItemProduct>
+                   <SubItemProduct>
+                       <SubItemProductID SubItemProductIDQualifier="FEE">Attendance Fee</SubItemProductID>
+                       <SubItemDescription>Attendance Fee</SubItemDescription>
+                       <SubItemPricingUnitRateType>FF</SubItemPricingUnitRateType>
+                       <SubItemPricingUnitRate>00000000035.000000</SubItemPricingUnitRate>
+                       <SubItemPricingUOM>EA</SubItemPricingUOM>
+                       <SubItemPricingUOMFactor>00000000001.000000</SubItemPricingUOMFactor>
+                       <SubItemPricingCurrencyCode>USD</SubItemPricingCurrencyCode>
+                       <SubItemPricingAmount>280.00</SubItemPricingAmount>
+                       <SubItemCurrencyConversion>
+                           <ConversionMechanism>M</ConversionMechanism>
+                           <CurrencyFrom FactorFrom="1">GBP</CurrencyFrom>
+                           <CurrencyTo FactorTo="1">USD</CurrencyTo>
+                           <ExchangeRate>00000000001.187100</ExchangeRate>
+                       </SubItemCurrencyConversion>
+                       <SubItemInvoiceUOM>EA</SubItemInvoiceUOM>
+                       <SubItemInvoiceUOMFactor>00000000001.000000</SubItemInvoiceUOMFactor>
+                       <SubItemQuantity>
+                           <SubItemInvoiceQuantity>00000000001.000000</SubItemInvoiceQuantity>
+                           <SubItemQuantityType>IN</SubItemQuantityType>
+                           <SubItemQuantityFlag>GR</SubItemQuantityFlag>
+                       </SubItemQuantity>
+                       <SubItemInvoiceUnitRate>00000000280.000000</SubItemInvoiceUnitRate>
+                       <SubItemInvoiceAmount>280.00</SubItemInvoiceAmount>
+                   </SubItemProduct>
+               </SubItem>
+           </InvoiceLine>
+       </SubInvoiceHeader>
+       <InvoiceSummary>
+           <InvoiceLineCount>000000000000000001</InvoiceLineCount>
+           <TotalInvoiceLineAmount>12077.19</TotalInvoiceLineAmount>
+           <TotalInvoiceTaxAmount>0.00</TotalInvoiceTaxAmount>
+       </InvoiceSummary>
+   </Invoice>
+   <InvoiceTransmissionSmry>
+       <InvoiceMessageCount>1</InvoiceMessageCount>
+   </InvoiceTransmissionSmry>
+</InvoiceTransmission>

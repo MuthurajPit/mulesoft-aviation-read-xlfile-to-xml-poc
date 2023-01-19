@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="output" format="xml">
+      <types:example format="xml" element="InvoiceTransmission" location="examples/Harvest Ryanair XML Invoice 2-newUK 10.01.23-1.xml"/>
+    </types:type>
+    <types:type name="input" format="xml">
+      <types:example format="xml" element="root" location="examples/sample-input.xml"/>
+    </types:type>
+    <types:type name="inputjson" format="json">
+      <types:shape format="weave" example="examples/testInput.json"><![CDATA[%dw 2.0
+
+type inputjson = {|
+  root: {|
+    row: {|
+      HEALNo: String, 
+      companyName: String, 
+      DateofSale: Number {"typeId": "double"}, 
+      TicketNumber: Number {"typeId": "double"}, 
+      VolumeLT: Number {"typeId": "double"}, 
+      UOM: String, 
+      VolumeGallons: Number {"typeId": "double"}, 
+      AircraftRegNo: String, 
+      FlightNumber: String, 
+      Destination: String, 
+      DomesticInternational: String, 
+      Total: Number {"typeId": "double"}, 
+      HydrantFee: Number {"typeId": "double"}, 
+      ThroughputFee: Number {"typeId": "double"}, 
+      StorageFee: Number {"typeId": "double"}, 
+      AttendanceFee: Number {"typeId": "double"}, 
+      TotalFeesApplicableGBP: Number {"typeId": "double"}, 
+      TotalFeesApplicableUSD: Number {"typeId": "double"}
+    |}
+  |}
+|} {"example": "{\\\"root\\\":{\\\"row\\\":{\\\"HEALNo\\\":\\\"HEAL\\/6786\\\",\\\"companyName\\\":\\\"Ryanair DAC\\\",\\\"DateofSale\\\":44935.0,\\\"TicketNumber\\\":881.0,\\\"VolumeLT\\\":7743.0,\\\"UOM\\\":\\\"LT\\\",\\\"VolumeGallons\\\":2045.4851654114084,\\\"AircraftRegNo\\\":\\\"EIHEW\\\",\\\"FlightNumber\\\":\\\"FR8284\\\",\\\"Destination\\\":\\\"ACE\\\",\\\"DomesticInternational\\\":\\\"INT\\\",\\\"Total\\\":6124.337078079024,\\\"HydrantFee\\\":68.52555000000001,\\\"ThroughputFee\\\":31.90116,\\\"StorageFee\\\":0.0,\\\"AttendanceFee\\\":35.0,\\\"TotalFeesApplicableGBP\\\":135.42671,\\\"TotalFeesApplicableUSD\\\":164.976818122}}}"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#9cd55424-fa10-420e-9666-e04f7eeac3c5"/>
+  <types:enrichment select="#39f64138-f11e-4e45-b6b9-9af182cf90a8">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="inputjson"/>
+        </types:message>
+        <types:variables>
+          <types:variable name="invoiceHeaderDetails" type="input"/>
+          <types:variable name="test3" type="inputjson"/>
+        </types:variables>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="output"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

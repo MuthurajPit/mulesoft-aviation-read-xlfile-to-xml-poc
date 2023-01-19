@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<file:config name="File_Config" doc:name="File Config" doc:id="c8e0410a-1768-4040-b73f-4acf708dac81" >
+		<file:connection workingDir="C:\Users\Muthuraj.Pitchaiah\Desktop\OPAYO\samir-file" />
+	</file:config>
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="e1693e19-7514-42be-8742-4bf84bee1c71" >
+		<http:listener-connection host="0.0.0.0" port="8056" />
+	</http:listener-config>
+	<flow name="test-read-xlfile-to-xmlFlow" doc:id="56824719-d685-41cb-9c09-f812e3c1d5b4" >
+		<http:listener doc:name="Listener" doc:id="200f08b9-aa2a-4958-8153-8d1576dcae43" config-ref="HTTP_Listener_config" path="test"/>
+		<file:read doc:name="Read" doc:id="ecffd1f6-4cfe-4e8f-a48b-c42a6bc84fee" outputMimeType="application/xlsx" config-ref="File_Config" path="RyanairDAC.xlsx"/>
+		<ee:transform doc:name="Transform Message" doc:id="5bde3cde-0d16-4297-822f-d00cba1a2bcd" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload.invoiceDetails]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<!-- <ee:transform doc:name="old" doc:id="d84e0465-14df-4504-9e88-95113d2c8fc0">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+-&#45;&#45;
+{
+	root: {
+		(payload map ( payload01 , indexOfPayload01 ) -> {
+			row: {
+				
+				name: payload01.name,
+				company: payload01.company,
+				designation: payload01.designation,
+			}
+		})
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform> -->
+		<!-- <ee:transform doc:name="Transform Message" doc:id="a9d44959-9438-4f61-a337-197810c23166" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+-&#45;&#45;
+Employee: payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform> -->
+		<logger level="INFO" doc:name="Logger" doc:id="1195d5b1-4871-4728-ac9d-610e1b12a5a4" message="FirstLog:#[payload]:"/>
+		<ee:transform doc:name="Transform Message" doc:id="fb02d6a9-68a7-48b3-b87b-11a885f24625" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	root: {
+		(payload map ( payload01 , indexOfPayload01 ) -> {
+			row: {
+				
+				"HEAL No": payload01."HEAL No",
+    "Date of Sale": payload01."Date of Sale",
+    "Ticket Number": payload01."Ticket Number",
+    "Volume (LT)": payload01."Volume (LT)",
+    "UOM": payload01."UOM",
+    "Volume (Gallons)": payload01."Volume (Gallons)",
+    "UOM": payload01."UOM",
+    "Aircraft Reg No": payload01."Aircraft Reg No",
+    "Flight Number": payload01."Flight Number",
+    "Destination": payload01."Destination",
+    "Domestic/ International": payload01."Domestic/ International",
+    "Total": payload01."Total",
+    "Hydrant Fee": payload01."Hydrant Fee",
+    "UOM": payload01."UOM",
+    "Throughput Fee": payload01."Throughput Fee",
+    "UOM": payload01."UOM",
+    "Storage Fee": payload01."Storage Fee",
+    "UOM": payload01."UOM",
+    "Attendance Fee": payload01."Attendance Fee",
+    "Total Fees Applicable GBP": payload01."Total Fees Applicable GBP",
+    "Total Fees Applicable USD": payload01."Total Fees Applicable USD"
+			}
+		})
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="ba1c33eb-d2a2-46ed-9afa-67bd9a6b6630" message=":output:#[payload]:"/>
+	</flow>
+</mule>
